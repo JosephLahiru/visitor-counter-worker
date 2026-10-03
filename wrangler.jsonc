@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "josephlahiru-visitor-counter",
+  "main": "dashboard-worker.js",
+  "compatibility_date": "2026-10-03",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "visitor-counter-db",
+      "database_id": "c95b58a4-9c97-4993-851d-3be9f47b132f",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

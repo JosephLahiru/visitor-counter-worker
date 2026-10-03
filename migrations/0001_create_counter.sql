@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS counters (
+  id TEXT PRIMARY KEY,
+  count INTEGER NOT NULL CHECK (count >= 0),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT OR IGNORE INTO counters (id, count)
+VALUES ('profile', 0);
